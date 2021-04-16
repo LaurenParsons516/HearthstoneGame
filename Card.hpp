@@ -6,11 +6,13 @@ class Card
 {
     private:
         string name;
+        string type;
         int mana_cost;
         int attack;
-        int defense;
+        int health;
     
     public:
-        Card(string name, int mana_cost, int attack, int defense);
+        Card(string name, string type, int mana_cost, int attack, int health);
         void display();
+        int getHealth();
 };
