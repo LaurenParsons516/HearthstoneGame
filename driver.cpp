@@ -17,7 +17,7 @@ int main(int argc, char** argv)
 
     if(parsedJson.is_array())
     {
-        for(int i = 0; i < parsedJson.size(); i++)
+        for(int i = 0; i < 100/*parsedJson.size()*/; i++)
         {
             json currValue = parsedJson[i];
             if(currValue.is_object())
