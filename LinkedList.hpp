@@ -11,7 +11,8 @@ class LinkedList
 
     public:
         LinkedList();
-        void addEnd(Card* c);
+        void addEnd(int c);
+        void mergeSort(int begin, int end);
         void display();
         int getCount();
         void insertionSortOnDefense();

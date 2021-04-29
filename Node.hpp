@@ -3,15 +3,16 @@
 class Node
 {
     private:
-        Card* payload;
+        int payload;
         Node* nextNode;
         Node* prevNode;
 
     public:
-        Node(Card* payload);
-        Card* getPayload();
+        Node(int payload);
+        int getPayload();
         Node* getNextNode();
         Node* getPrevNode();
         void setNextNode(Node* n);
         void setPrevNode(Node* n);
+        void setPayload(int payload);
 };
